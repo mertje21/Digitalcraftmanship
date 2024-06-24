@@ -22,8 +22,8 @@ void setup() {
 void draw() {
   background(255);// background color set to white
   drawGradientCircle(centerX2, centerY2, radius2, segments2, color(0,0,250,245), color(135,206,250,245));// the color of the last circle set to blue(starting and end color of gradient)
-  drawGradientCircle(centerX, centerY, radius, segments, color(255, 50, 0,245), color(255, 200, 0,245));// the color of the last circle set to orange(starting and end color of gradient)
-  drawGradientCircle(centerX1, centerY1, radius1, segments1, color(112, 41, 99,245), color(224, 176, 255,245));// the color of the last circle set to purple(starting and end color of gradient)
+  drawGradientCircle(centerX, centerY, radius, segments, color(255, 50, 0,245), color(255, 200, 0,245));// the color of the first circle set to orange(starting and end color of gradient)
+  drawGradientCircle(centerX1, centerY1, radius1, segments1, color(112, 41, 99,245), color(224, 176, 255,245));// the color of the middle circle set to purple(starting and end color of gradient)
   
 
   save("atlas.jpg");// saving the screen as a picture
