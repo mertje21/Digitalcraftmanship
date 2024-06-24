@@ -11,7 +11,7 @@ int radius1 = 230; // the size of the circle 2 average energy in Atlas building 
 int radius2 = 214; // the size of the circle 3 average productivity in Atlas building times 60
 int rectSize = 5; // Size of each rectangle (both width and height), all rectangels together form a circle. the bigger the rectangles, the less smooth it is
 int[] levels = {225, 200, 150, 120, 100}; // 5 different intensities for the 3 colors
-int[] segments = {0*5, 1*5, 3*5, 11*5, 7*5}; // Number of vertical segments per color based on the individual data of creatitivity in Atlas times a number to creat a full circle
+int[] segments = {0*5, 1*5, 3*5, 11*5, 7*5}; // Number of vertical segments per color based on the individual data of creativity in Atlas times a number to creat a full circle
 int[] segments1 = {0*5,1*5, 5*5, 13*5, 3*5}; // Number of vertical segments per color based on the individual data of energy in Atlas times a number to creat a full circle
 int[] segments2 = {1*4, 0*5, 9*4, 8*4, 4*4}; // Number of vertical segments per color based on the individual data of productivity in Atlas times a number to creat a full circle
 void setup() {
