@@ -16,7 +16,7 @@ int[] segments1 = {0*5,1*5, 5*5, 13*5, 3*5}; // Number of vertical segments per 
 int[] segments2 = {1*4, 0*5, 9*4, 8*4, 4*4}; // Number of vertical segments per color based on the individual data of productivity in Atlas times a number to creat a full circle
 void setup() {
   size(1700, 500); // the size of the screen/ building
-  noLoop();
+  noLoop();// making sure the draw function is only runned once 
 }
 
 void draw() {
