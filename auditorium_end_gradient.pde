@@ -1,22 +1,22 @@
-int width = 1000;
-int height = 700;
+int width = 1000;// width of the screen/building
+int height = 700;// height of the screen/ building
 int centerX = width-150; // x middle point of circle 1
 int centerY = height/2; // y middle point of circle 1
 int centerX1 = 150; // x middle point of circle 2
 int centerY1 = height/2; // y middle point of circle 2
 int centerX2 = width/2; // x middle point of circle 3
 int centerY2 = height/2; // y middle point of circle 3
-int radius = 146; // the size of the circle 1
-int radius1 = 146; // the size of the circle 2
-int radius2 = 172; // the size of the circle 3
-int rectSize = 5; // Size of each rectangle (both width and height)
-int[] levels = {225, 200, 150, 120, 100}; // 5 different intensities for orange
-int[] segments = {2*8, 7*8, 3*8, 1*8, 1*8}; // Number of vertical segments for creativity
-int[] segments1 = {4*7,3*7, 4*7, 3*7, 0*7}; // Number of vertical segments for energy
-int[] segments2 = {2*9, 2*9, 7*9, 2*9, 1*9}; // Number of vertical segments for productivity
+int radius = 146; // the size of the circle 1 average creativity in Atlas building times 60
+int radius1 = 146; // the size of the circle 1 average energy in Atlas building times 60
+int radius2 = 172; // the size of the circle 1 average productivity in Atlas building times 60
+int rectSize = 5;  // Size of each rectangle (both width and height), all rectangels together form a circle. the bigger the rectangles, the less smooth it is
+int[] levels = {225, 200, 150, 120, 100}; // // 5 different intensities for the 3 colors
+int[] segments = {2*8, 7*8, 3*8, 1*8, 1*8}; // Number of vertical segments per color based on the individual data of creatitivity in Atlas times a number to creat a full circle
+int[] segments1 = {4*7,3*7, 4*7, 3*7, 0*7}; // Number of vertical segments per color based on the individual data of energy in Atlas times a number to creat a full circle
+int[] segments2 = {2*9, 2*9, 7*9, 2*9, 1*9}; // Number of vertical segments per color based on the individual data of productivity in Atlas times a number to creat a full circle
 void setup() {
-  size(1000, 700);
-  noLoop();
+  size(1000, 700);// the size of the screen/ building
+  noLoop();making sure the draw function is only runned once 
 }
 
 void draw() {
